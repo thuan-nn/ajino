@@ -1,0 +1,12 @@
+{
+  "vi": {
+    "title": "Liên hệ",
+    "slug": "lien-he",
+    "content": "<img src=\"../assets/img/contact-01.png\" alt=\"contact image\"><div class=\"contact__content-block\"><p>Với sứ mệnh đóng góp vào sự phát triển hơn nữa của đất nước Việt Nam, góp phần mang lại hạnh phúc và sức khỏe cho người Việt thông qua văn hóa ẩm thực và phát triển nguồn thực phẩm, Công ty Ajinomoto Việt Nam luôn nỗ lực mang đến khách hàng những sản phẩm tốt nhất với chất lượng dịch vụ tốt nhất.</p><p>Trung tâm Tư vấn Khách hàng của Công ty Ajinomoto Việt Nam mong muốn được phục vụ khách hàng tốt nhất thông qua các hoạt động tư vấn sử dụng sản phẩm, thu thập và xử lý ý kiến đóng góp của khách hàng, qua đó góp phần cải tiến và phát triển sản phẩm, dịch vụ khách hàng ngày càng tốt hơn. </p><p>Trung tâm Tư vấn Khách hàng rất mong nhận được những đóng góp, ý kiến của khách hàng để Công ty Ajinomoto Việt Nam ngày càng phát triển hơn.</p></div>"
+  },
+  "en": {
+    "title": "Contact",
+    "slug": "contact",
+    "content": "<img src=\"../assets/img/contact-01.png\" alt=\"contact image\"><div class=\"contact__content-block\"><p>With the mission of contributing to the further development of the country of Vietnam, contributing to bringing happiness and health to Vietnamese people through culinary culture and developing culinary resources, Ajinomoto Vietnam Company always strives to bring customers the best products with the best service quality.</p><p>Customer Consulting Center of Ajinomoto Vietnam Company wants to serve customers the best through consulting activities on product use, collecting and processing customer feedback, from there contribute to improving and developing products, providing better and better customer service.</p><p>Customer Advisory Center looks forward to receiving your comments from customers for Ajinomoto Vietnam to develop.</p></div>"
+  }
+}

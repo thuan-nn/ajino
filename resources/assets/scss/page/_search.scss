@@ -1,0 +1,136 @@
+.search-page {
+  max-width: 878px;
+  padding-top: 20px;
+
+  h2.title {
+    text-align: left;
+  }
+
+  .search-form {
+    background-color: #f2f2f2;
+    border-radius: 8px;
+    padding: 32px 40px;
+    margin-bottom: 40px;
+    @media #{$info-phone} {
+      padding: 20px 20px;
+
+    }
+    form {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+
+      input {
+        @include font-size(18px);
+        border: solid 1px #e8e8e8;
+        background-color: #fff;
+        padding: 8px 16px;
+        flex: 1;
+
+        &:focus {
+          outline: none;
+        }
+      }
+
+      button {
+        background-color: #707070;
+        border: none;
+        cursor: pointer;
+        color: #fff;
+        @include font-size(18px);
+        width: 96px;
+        text-align: center;
+        @media #{$info-phone} {
+          width: 75px;
+        }
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+  }
+
+  h3 {
+    @include font-size(36px);
+    font-weight: normal;
+    margin-bottom: 16px;
+  }
+
+  .search-status {
+    background-color: #f7f7f7;
+    padding: 16px;
+    margin-bottom: 40px;
+    text-align: center;
+
+    p {
+      color: #b22222;
+      @include font-size(20px);
+
+    }
+  }
+
+  .search-result {
+    margin-bottom: 40px;
+
+    &__text {
+      @include font-size(18px);
+      text-align: right;
+    }
+
+    &__start, &__end, &__totalhits {
+      @include font-size(28px);
+
+    }
+  }
+
+  .search-record {
+    margin-bottom: 40px;
+
+    &__wrap {
+      border-top: 1px solid #d7d7d7;
+      padding: 40px 0;
+
+      a {
+        @include font-size(24px);
+        text-decoration: none;
+        color: #3251ad;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .record:last-child {
+      border-bottom: solid 1px #d7d7d7;
+    }
+
+    &__title {
+      margin-bottom: 16px;
+    }
+
+    &__nearby {
+      @include font-size(18px);
+      margin-bottom: 16px;
+
+      em {
+        background-color: #ffff66;
+        font-style: normal;
+        font-weight: bold;
+      }
+    }
+
+    &__url {
+      a {
+        @include font-size(18px);
+        word-break: break-all;
+      }
+    }
+  }
+
+  .common-pagination {
+    padding-top: 0;
+  }
+}

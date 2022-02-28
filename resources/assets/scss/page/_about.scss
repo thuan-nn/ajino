@@ -1,0 +1,374 @@
+.about__wrap {
+  padding: 80px 0 20px;
+
+  .top__story {
+    padding: 0 15px;
+  }
+}
+
+.about {
+  max-width: 878px;
+  padding-top: 40px;
+  padding-bottom: 80px;
+  @include font-size(18px);
+  @media #{$info-phone} {
+    font-size: 18px;
+  }
+
+  .about__title {
+    @include font-size(48px);
+    margin-bottom: 40px;
+    text-align: center;
+    @media #{$info-phone} {
+      font-size: 30px;
+    }
+  }
+
+  .about__link {
+    a {
+      color: #3251AD;
+    }
+
+    h3 {
+      @include font-size(24px);
+      border-bottom: 1px solid #D7D7D7;
+      padding-bottom: 16px;
+      margin-bottom: 24px;
+    }
+
+    ul {
+      li {
+        display: inline-block;
+        margin: 0 25px 40px 0;
+        @media #{$info-phone} {
+          margin-bottom: 24px;
+        }
+      }
+
+      li.active {
+        a {
+          color: #333;
+          pointer-events: none;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+
+  .about-group__video {
+    video, img {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    small {
+      @include font-size(14px);
+      @media #{$info-phone} {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .about__sub-title {
+    @include font-size(36px);
+    margin-bottom: 30px;
+    font-weight: normal;
+    @media #{$info-phone} {
+      font-size: 30px;
+    }
+  }
+}
+
+.about-group {
+  @include font-size(18px);
+  padding-bottom: 0;
+  @media #{$info-phone} {
+    font-size: 18px;
+  }
+
+  .about-group__block {
+    margin-bottom: 40px;
+
+    &.about-group__block-01 {
+      img {
+        margin-bottom: 40px;
+      }
+
+      p {
+        margin-bottom: 16px;
+      }
+    }
+
+    &.about-group__block-03 {
+      p {
+        margin-bottom: 16px;
+      }
+
+      ul {
+        margin-top: -16px;
+
+        li {
+          margin-bottom: 16px;
+        }
+      }
+    }
+
+    &.about-group__block-04 a + a {
+      margin-top: 16px;
+    }
+
+    a {
+      color: #3251AD;
+      display: inline-flex;
+      align-items: center;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      &:before {
+        content: '';
+        width: 6px;
+        height: 6px;
+        margin-right: 12px;
+        display: inline-block;
+        background-color: #666;
+        border-radius: 50%;
+      }
+    }
+
+    p {
+      margin-bottom: 40px;
+    }
+
+    ul li {
+      margin-bottom: 16px;
+    }
+  }
+
+  .about-group__block__profile {
+    .item {
+      @include flex();
+      margin-bottom: 40px;
+      @media #{$info-phone} {
+        flex-direction: column;
+        margin-bottom: 32px;
+      }
+
+      a:before {
+        display: none;
+      }
+
+      > a {
+        width: 48%;
+        display: block;
+        margin-right: 32px;
+        @media #{$info-phone} {
+          width: 100%;
+          margin-bottom: 16px;
+          margin-right: 0;
+        }
+      }
+
+      .item__content {
+        > a {
+          @include font-size(24px);
+          margin-bottom: 8px;
+          font-weight: bold;
+          @media #{$info-phone} {
+            font-size: 20px;
+          }
+        }
+
+        p {
+          @include font-size(18px);
+          margin-bottom: 0;
+          @media #{$info-phone} {
+            font-size: 18px;
+          }
+        }
+      }
+
+    }
+  }
+}
+
+.about-history {
+  .about-history__content {
+    padding-bottom: 120px;
+
+    > img {
+      margin-bottom: 40px;
+    }
+
+    .text-center + .text-center {
+      margin-top: 40px;
+    }
+  }
+
+  .about-history__block {
+    .block__content {
+      margin-bottom: 40px;
+
+      &.block__content--right {
+        > div {
+          float: right;
+          width: 48%;
+          margin-left: 32px;
+          @media #{$info-phone} {
+            float: none;
+            margin-left: 0;
+            margin-bottom: 16px;
+            width: 100%;
+          }
+        }
+      }
+
+      &.block__content--left {
+        > div {
+          float: left;
+          margin-right: 32px;
+          @media #{$info-phone} {
+            float: none;
+            margin-right: 0;
+            margin-bottom: 16px;
+            width: 100%;
+          }
+        }
+      }
+
+      > div {
+        margin-bottom: 16px;
+        width: 48%;
+
+        img {
+          margin-bottom: 8px;
+        }
+
+        small {
+          @include font-size(14px);
+          @media #{$info-phone} {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .about-group__video {
+    margin-bottom: 80px;
+    @media #{$info-md-desktop} {
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.about-timeline {
+  .about-timeline__content {
+    padding-bottom: 80px;
+  }
+
+  .about__sub-title {
+    @media #{$info-phone} {
+      margin-bottom: 8px;
+    }
+  }
+
+  .nav-tabs {
+    @include flex();
+    flex-wrap: wrap;
+    border-bottom: none;
+    position: relative;
+    margin-bottom: 80px;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 1px;
+      background-color: #d7d7d7;
+    }
+
+    li {
+      width: 25%;
+      text-align: center;
+      border-bottom: 1px solid #d7d7d7;
+      margin-top: 40px;
+      @media #{$info-phone} {
+        width: 50%;
+      }
+
+      a {
+        display: inline-block;
+        padding-bottom: 16px;
+        border-bottom: 4px solid transparent;
+        color: #333;
+
+        &.active, &:hover {
+          border-bottom-color: #666;
+        }
+      }
+    }
+  }
+
+  .tab-content {
+    .block__content {
+      @include flex();
+      border-bottom: 1px solid #d7d7d7;
+      padding-bottom: 40px;
+      margin-bottom: 40px;
+      @media #{$info-phone} {
+        flex-direction: column;
+      }
+
+      ul {
+        @media #{$info-phone} {
+          margin-bottom: 16px;
+        }
+
+        li {
+          margin-bottom: 16px;
+
+          &:before {
+            content: '';
+            display: inline-block;
+            vertical-align: middle;
+            width: 6px;
+            height: 6px;
+            margin-right: 12px;
+            background-color: #666;
+            border-radius: 50%;
+          }
+
+          p {
+            display: inline;
+          }
+        }
+      }
+
+      > .block__content__img {
+        width: 48%;
+        min-width: 48%;
+        margin-left: 32px;
+        @media #{$info-phone} {
+          width: 100%;
+          min-width: initial;
+          margin-left: 0;
+        }
+
+        img {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}
+
+.about-nutri, .about-quality {
+  .btn-load-more {
+    padding: 40px 0;
+  }
+}

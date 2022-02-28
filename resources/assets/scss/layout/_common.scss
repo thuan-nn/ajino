@@ -1,0 +1,117 @@
+a {
+  color: #333;
+
+  &:hover {
+    text-decoration: none;
+    color: initial;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+ul, ol, p {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-weight: bold;
+}
+
+* {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1318px;
+  width: 100%;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.cke_editable {
+  ol, ul, dl {
+    /* IE7: reset rtl list margin. (#7334) */
+    *margin-right: 0;
+    /* Preserved spaces for list items with text direction different than the list. (#6249,#8049)*/
+    padding: 0 40px;
+  }
+
+  ul {
+    list-style: initial;
+  }
+
+  blockquote {
+    font-style: italic;
+    padding: 2px 0;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 0;
+  }
+}
+
+.post-container {
+  ol, ul, dl {
+    /* IE7: reset rtl list margin. (#7334) */
+    *margin-right: 0;
+    /* Preserved spaces for list items with text direction different than the list. (#6249,#8049)*/
+    padding: 0 40px;
+  }
+
+  ul {
+    list-style: initial;
+  }
+
+  blockquote {
+    font-style: italic;
+    padding: 2px 0;
+    border-style: solid;
+    border-color: #ccc;
+    border-width: 0;
+  }
+}
+
+.cke_widget_wrapper:hover:after {
+  content: "id: " attr(data-cke-widget-id);
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 2px 4px;
+  background: #EEE;
+  border: solid 1px #DDD;
+  border-radius: 2px;
+  color: #BBB;
+  font: bold 10px sans-serif;
+}
+
+.align-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.align-right {
+  float: right;
+  margin-left: 20px;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-center > figure {
+  display: inline-block;
+}
+.fs-product-item__content-title {
+  white-space: pre-line;
+  -webkit-line-clamp: unset !important;
+  margin-top: -20px;
+}

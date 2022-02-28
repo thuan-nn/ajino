@@ -1,0 +1,39 @@
+// Variables + Mixins + Functions
+@import "helpers/variables";
+
+// Always include variable 1st !
+@import "helpers/mixins";
+
+// Base
+@import "base/typography";
+
+// Vendors
+// Import jQuery lib, Bootstrap ... etc
+@import "../css/vendor/bootstrap.css";
+@import "../css/vendor/fullcalendar.min.css";
+@import "../css/vendor/swiper-bundle.min.css";
+
+// Themes
+// If we have themes, import specific styles here
+
+// Layout
+@import "layout/banner";
+@import "layout/common";
+@import "layout/header";
+@import "layout/main";
+@import "layout/sidebar";
+@import "layout/footer";
+
+// Page specific styles
+@import "page/top";
+@import "page/about";
+@import "page/product";
+@import "page/stories";
+@import "page/umami";
+@import "page/company";
+@import "page/events";
+@import "page/contact";
+@import "page/career";
+@import "page/sitemap";
+@import "page/search";
+@import "page/privacy";

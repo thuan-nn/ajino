@@ -1,0 +1,50 @@
+.sitemap {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 878px;
+
+  ul {
+    li {
+      border-bottom: 1px solid #d7d7d7;
+      color: #666666;
+      @include font-size(30px);
+      line-height: 1.33333333;
+      padding: 40px 0;
+      margin: 0;
+
+      &:first-child {
+        padding-top: 0;
+        @include font-size(36px);
+      }
+
+      &:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+
+      a {
+        color: #3251AD;
+      }
+    }
+  }
+
+  ul.sub-menu {
+    padding-left: 32px;
+
+    li {
+      border-bottom: none;
+      color: #666666;
+      @include font-size(24px);
+      padding: 40px 0 0 0;
+    }
+
+    .sub-menu {
+      padding-left: 32px;
+
+      li {
+        @include font-size(18px);
+        padding: 16px 0 0 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,221 @@
+.umami {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  @media #{$info-phone} {
+    padding: 40px 20px 80px;
+  }
+
+  h3 {
+    @include font-size(36px);
+    line-height: 1.11111111;
+    font-weight: 400;
+    margin-bottom: 32px;
+
+    @media #{$info-phone} {
+      @include font-size(31px);
+    }
+  }
+
+  img {
+    margin-bottom: 40px;
+  }
+
+  p {
+    @include font-size(18px);
+    line-height: 1.33333333;
+  }
+
+  .block-product-wrap {
+    .item {
+      &__content {
+        span {
+          height: 1.5rem;
+          width: 1.5rem;
+          vertical-align: middle;
+          display: inline-block;
+          background-repeat: no-repeat;
+          background-size: contain;
+          background-position: center;
+        }
+        h3 {
+          color: #3251AD;
+          @include font-size(24px);
+          font-weight: 400;
+          line-height: 1.33333333;
+          margin-bottom: 0;
+        }
+
+        p {
+          @include font-size(18px);
+          line-height: 1.33333333;
+        }
+      }
+    }
+  }
+
+  .text-center {
+    padding: 30px 0 80px;
+  }
+}
+
+.umami-detail {
+  padding-top: 40px;
+  padding-bottom: 137px;
+  max-width: 878px;
+
+  &__content {
+    p {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__video {
+    padding-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .block-product-wrap {
+    .item {
+      background: #F2F2F2;
+      margin: 0 15px 20px;
+      @media #{$info-phone} {
+        margin: 0 0 20px;
+      }
+
+      .item__thumb {
+        height: 146px;
+      }
+
+      .item__content {
+        padding: 20px;
+        @media #{$info-phone} {
+          padding: 10px 0 20px;
+        }
+
+        h3 {
+          margin-bottom: 8px;
+        }
+
+        p {
+          color: #999999;
+        }
+      }
+    }
+  }
+}
+
+.umami-recipies {
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  &-detail {
+    max-width: 878px;
+
+
+    .block-product-wrap {
+      margin-bottom: 60px;
+
+      .item {
+        margin: 0 15px 20px;
+        @media #{$info-phone} {
+          margin: 0 0 20px;
+        }
+
+        .item__thumb {
+          height: 146px;
+        }
+
+        .item__content {
+          @media #{$info-phone} {
+            padding: 10px 0 20px;
+
+          }
+
+          h3 {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  h2.title {
+    margin-bottom: 40px;
+  }
+
+  &__follows {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    a {
+      margin: 0 16px;
+    }
+
+    img {
+      width: 32px;
+    }
+  }
+
+  &__content {
+    img {
+      margin-bottom: 40px;
+    }
+
+    p {
+      margin-bottom: 40px;
+    }
+
+    &-wrap {
+      display: flex;
+      flex-wrap: wrap;
+      //justify-content: space-between;
+      margin-bottom: 24px;
+
+      ul {
+        width: calc((100% - 32px) / 2);
+        list-style: disc;
+        list-style-position: inside;
+
+        &:first-child {
+          margin-right: 32px;
+        }
+
+        @media #{$info-phone} {
+          width: 100%;
+          &:first-child {
+            margin-right: 0;
+          }
+        }
+      }
+
+      ol {
+        counter-reset: item;
+        list-style-type: none;
+        margin-bottom: 40px;
+
+        li {
+          display: flex;
+
+          &::before {
+            content: counter(item) "  ";
+            counter-increment: item;
+            margin-right: 20px;
+          }
+        }
+      }
+
+      li {
+        @include font-size(18px);
+        line-height: 1.33333333;
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+.glutamate-msg {
+  padding-bottom: 40px;
+}
+

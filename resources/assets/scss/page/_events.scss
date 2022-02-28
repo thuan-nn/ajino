@@ -1,0 +1,142 @@
+.events {
+  padding-top: 80px;
+  padding-bottom: 20px;
+
+  .common-block-product {
+    margin-bottom: 40px;
+    @media #{$info-phone} {
+      margin-bottom: 20px;
+    }
+  }
+
+  .block-product-wrap {
+    .item {
+      &__content {
+        h3 {
+          line-height: 1.33333333;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+
+  &__content {
+    h3 {
+      @include font-size(36px);
+      line-height: 1.11111111;
+      margin-bottom: 40px;
+    }
+
+    p {
+      margin-bottom: 16px;
+    }
+
+    img {
+      margin-bottom: 40px;
+      @media #{$info-phone} {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+.events-detail {
+  max-width: 878px;
+  padding-bottom: 80px;
+
+  &__block {
+    margin-bottom: 40px;
+    @media #{$info-phone} {
+      margin-bottom: 20px;
+    }
+  }
+
+  //&__content {
+  //  img {
+  //    margin-bottom: 40px;
+  //  }
+  //
+  //  h3 {
+  //    @include font-size(36px);
+  //    line-height: 1.11111111;
+  //    margin-bottom: 40px;
+  //  }
+  //
+  //  p {
+  //    margin-bottom: 16px;
+  //  }
+  //
+  //  ul {
+  //    list-style: disc;
+  //    list-style-position: inside;
+  //    margin-bottom: 40px;
+  //  }
+  //
+  //  li {
+  //    color: #666666;
+  //    @include font-size(18px);
+  //    line-height: 1.33333333;
+  //    margin-bottom: 16px;
+  //
+  //    a {
+  //      color: #3251AD;
+  //
+  //      &:hover {
+  //        text-decoration: underline;
+  //      }
+  //    }
+  //  }
+  //
+  //  &-video {
+  //    margin-bottom: 40px;
+  //  }
+  //}
+}
+
+.events-press {
+  max-width: 878px;
+  padding-top: 40px;
+
+  &__content {
+    margin-bottom: 40px;
+
+    img {
+      margin-bottom: 40px;
+    }
+
+    &-wrap {
+      padding: 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #d7d7d7;
+
+      .icon-pdf {
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+
+      }
+
+      a {
+        @include font-size(18px);
+        line-height: 1.33333333;
+        color: #3251AD;
+        width: calc(100% - 220px);
+        @media #{$info-phone} {
+          width: 100%;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .events-press__date {
+      margin-right: 32px;
+    }
+  }
+}

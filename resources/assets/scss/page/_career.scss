@@ -1,0 +1,565 @@
+.career {
+  max-width: 878px;
+  padding-top: 80px;
+  padding-bottom: 20px;
+  @media #{$info-phone} {
+    padding-top: 40px;
+  }
+
+  &__search {
+    background: #F2F2F2;
+    @media #{$info-phone} {
+      border-top: 1px solid #fff;
+    }
+  }
+
+  &__form {
+    max-width: 878px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    @media #{$info-phone} {
+      flex-direction: column;
+      padding: 40px 20px;
+    }
+
+    label {
+      padding: 13px 0;
+      margin-bottom: 0;
+    }
+
+    .form-group {
+      margin: 0 24px 0 0;
+      width: 302px;
+      @media #{$info-phone} {
+        margin: 0 0 24px 0;
+        width: 100%;
+      }
+
+      select.form-control {
+        height: 48px;
+        padding-right: 5px;
+      }
+    }
+
+
+    input[type='submit'] {
+      margin: 0 0 0 8px;
+      width: auto;
+      @media #{$info-phone} {
+        width: 100%;
+        margin: 0;
+      }
+    }
+  }
+
+  h3 {
+    @include font-size(36px);
+    font-weight: 400;
+    line-height: 1.11111111;
+    margin-bottom: 32px;
+  }
+
+  img {
+    margin-bottom: 40px;
+  }
+
+  .common-block-product {
+    h3 {
+      @media #{$info-phone} {
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .block-product-wrap {
+    margin: 0 -16px;
+    @media #{$info-phone}{
+      margin: 0;
+    }
+
+    .item {
+      background: #F2F2F2;
+      width: calc((100% - 96px) / 3);
+      margin: 0 16px 40px;
+      @media #{$info-phone}{
+        width: 100%;
+        margin: 0 0 24px;
+      }
+
+      &__content {
+        padding: 20px;
+
+        span {
+          display: inline-block;
+          width: 16px;
+          height: 22px;
+          vertical-align: middle;
+        }
+
+        p {
+          color: #999999;
+          margin-bottom: 8px;
+        }
+      }
+
+      &__thumb {
+        height: 146px;
+      }
+    }
+  }
+
+  &__hot {
+    @media #{$info-phone} {
+      margin-bottom: 16px;
+    }
+
+    .block-product-wrap {
+      .item {
+        &.item--bg {
+          background: #B22222;
+
+          .item__content {
+            h3 {
+              color: #ffffff;
+            }
+
+            p {
+              color: #ffffff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__content {
+    &-block {
+      margin-bottom: 40px;
+
+      &.line {
+        @media #{$info-phone} {
+          border-bottom: 1px solid #d7d7d7;
+          margin-bottom: 20px;
+          padding-bottom: 20px;
+        }
+      }
+    }
+
+    h3 {
+      font-weight: 400;
+      margin-bottom: 32px;
+
+    }
+
+    p {
+      margin-bottom: 16px;
+    }
+
+    img {
+      margin-bottom: 40px;
+    }
+
+    figure {
+      margin-bottom: 40px;
+
+      img {
+        margin-bottom: 16px;
+      }
+    }
+  }
+
+  .common-pagination {
+    margin-bottom: 40px;
+    @media #{$info-phone} {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.career-overview {
+  padding-top: 20px;
+
+  .career__content {
+    &-block {
+      ul {
+        list-style: disc;
+        list-style-position: inside;
+
+        li {
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .common-block-product {
+    .item {
+      background: transparent;
+      text-align: center;
+      margin-bottom: 20px;
+
+      &__thumb {
+        border-radius: 50%;
+        margin: 0 auto;
+        width: 164px;
+        height: 164px;
+      }
+
+      &__content {
+        h4 {
+          @include font-size(24px);
+          font-weight: bold;
+          color: #3251AD;
+          text-align: center;
+          margin-bottom: 8px;
+        }
+
+        p {
+          color: #333333;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+
+.career-recruit {
+  //padding-bottom: 117px;
+  @media #{$info-phone} {
+    padding-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .career-recruit__step {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+    padding: 0;
+    list-style-type: none;
+    @media #{$info-phone} {
+      margin-bottom: 40px;
+    }
+
+    li {
+      cursor: pointer;
+      position: relative;
+      width: 94px;
+
+      &::before {
+        content: "";
+        background: url(../../img/career-icon-arrow.svg) no-repeat center;
+        position: absolute;
+        width: 15px;
+        height: 24px;
+        top: 36px;
+        margin: 0;
+        left: calc(100% + 2.7em);
+        @media #{$info-phone} {
+          left: calc(100% + 0.7em);
+        }
+      }
+
+      &:last-child {
+        &::before {
+          content: unset;
+        }
+      }
+
+      &.active {
+        &::before {
+          background: url(../../img/icon-arrow-red.svg) no-repeat center;
+        }
+
+        .career-recruit__step-icon {
+          background: #EE1C26;
+
+          .icon-1 {
+            background-image: url(../../img/icon-step-white-01.svg);
+          }
+
+          .icon-2 {
+            background-image: url(../../img/icon-step-white-02.svg);
+          }
+
+          .icon-3 {
+            background-image: url(../../img/icon-step-white-03.svg);
+          }
+
+          .icon-4 {
+            background-image: url(../../img/icon-step-white-04.svg);
+          }
+
+          .icon-5 {
+            background-image: url(../../img/icon-step-white-05.svg);
+          }
+        }
+
+        .career-recruit__step-card {
+          h4 {
+            color: #000000;
+          }
+
+          p {
+            color: #333333;
+          }
+        }
+      }
+
+      @media #{$info-phone} {
+        width: calc(50% - 15px);
+        margin-bottom: 32px;
+        &:nth-child(2n) {
+          &::before {
+            content: unset;
+          }
+        }
+      }
+    }
+
+    a {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &-icon {
+      background: #F2F2F2;
+      border-radius: 50%;
+      display: block;
+      position: relative;
+      width: 94px;
+      height: 94px;
+      margin-bottom: 12px;
+
+      span {
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+
+      .icon-1 {
+        background-image: url(../../img/icon-step-red-01.svg);
+      }
+
+      .icon-2 {
+        background-image: url(../../img/icon-step-red-02.svg);
+      }
+
+      .icon-3 {
+        background-image: url(../../img/icon-step-red-03.svg);
+      }
+
+      .icon-4 {
+        background-image: url(../../img/icon-step-red-04.svg);
+      }
+
+      .icon-5 {
+        background-image: url(../../img/icon-step-red-05.svg);
+      }
+    }
+
+    &-card {
+      h4 {
+        @include font-size(18px);
+        color: #888888;
+        line-height: 1.33333333;
+      }
+
+      p {
+        @include font-size(14px);
+        color: #888888;
+      }
+    }
+  }
+
+  .tab-content {
+    ul {
+      list-style: disc;
+      list-style-position: inside;
+      margin-bottom: 40px;
+    }
+
+    li {
+      @include font-size(18px);
+      line-height: 1.33333333;
+      margin-bottom: 16px;
+
+      a {
+        color: #3251AD;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .tab-pane {
+      p {
+        margin-bottom: 16px;
+      }
+    }
+  }
+}
+
+.career-detail {
+  padding-top: 40px;
+  padding-bottom: 80px;
+  @media #{$info-phone} {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .career__content {
+    //ul {
+    //  list-style: decimal inside;
+    //}
+
+    &-inner {
+      display: flex;
+      padding: 20px 0;
+      border-top: 1px solid #d7d7d7;
+      border-bottom: 1px solid #d7d7d7;
+
+      &:nth-of-type(2) {
+        border-top: none;
+        margin-bottom: 40px;
+      }
+
+      p {
+        width: 188px;
+        margin: 0 32px 0 0;
+
+        & p {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  &__form {
+    margin-bottom: 64px;
+    overflow: hidden;
+
+    .common-form {
+      p {
+        margin-bottom: 16px;
+      }
+
+      input[type="submit"] {
+        width: 188px;
+        padding: 16px 0;
+        @media #{$info-phone} {
+          width: 100%;
+        }
+      }
+    }
+
+    .form-file-upload {
+      width: 100%;
+
+      label {
+        span {
+          @include font-size(18px);
+          color: #EE1C27;
+        }
+      }
+
+      input[type='file'] {
+        margin-bottom: 8px;
+      }
+
+      span {
+        @include font-size(14px);
+        color: #888888;
+      }
+
+      span.file-attention {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      .file-list {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        border: 1px solid #d7d7d7;
+        padding: 20px 16px;
+
+        li {
+          background: #fff;
+          border-radius: 50px;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+          align-items: center;
+          display: flex;
+          font-size: 12px;
+          padding: 8px 16px;
+          margin-right: 15px;
+          margin-bottom: 15px;
+          position: relative;
+        }
+
+        .remove-file {
+          width: 26px;
+          height: 26px;
+          position: absolute;
+          right: 4px;
+          top: 50%;
+          -webkit-transform: translateY(-50%);
+          -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+          background: #fff;
+          border-radius: 50%;
+          border: 1px solid #fff;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+
+          &::before {
+            content: "";
+            background-image: url(../../img/icon-close-file.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 12px;
+            height: 12px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+          }
+
+          &:hover {
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2), 0 3px 6px rgba(0, 0, 0, 0.3);
+          }
+        }
+      }
+    }
+  }
+
+  .popup__success {
+    .common__popup-header {
+      .common__popup-close {
+        @media #{$info-phone} {
+          right: 20px;
+        }
+      }
+    }
+
+    .common__popup-body {
+      text-align: center;
+      padding: 63px 80px 132px;
+      @media #{$info-phone} {
+        padding: 30px 20px 66px;
+      }
+    }
+  }
+}
